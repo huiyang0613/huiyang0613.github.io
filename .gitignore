@@ -1,0 +1,9 @@
+#project
+_site
+external
+tmp
+
+# general
+.DS_Store
+
+.vscode

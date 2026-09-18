@@ -1,0 +1,132 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+{% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+{% assign title = post.title %}
+{% endif %}
+
+<!-- <div class="{{ include.type | default: " list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+    <div class="archive__item-teaser">
+      <img src={% if teaser contains "://" %} "{{ teaser }}" {% else %} "{{ teaser | prepend: " /images/" | prepend:
+        base_path }}" {% endif %} alt="">
+    </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
+          class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.read_time %}
+    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+    {{ post.authors }}<br>
+    <br>
+    <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
+    {% if post.links %}
+    {{ post.links }}<br>
+    {% endif %}
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">
+    <p>{{ post.excerpt | markdownify | remove: '
+    <p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+    </p>
+    {% endif %}
+
+    {% if post.citation and post.paperurl %}
+    <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
+    {% elsif post.citation %}
+    <p>Recommended citation: {{ post.citation }} </p>
+    {% elsif post.paperurl %}
+    <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+    {% endif %}
+
+  </article>
+</div> -->
+
+<!-- <style>
+  .table__item {
+    letter-spacing: 0px;
+  }
+</style> -->
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <!-- <h2 class="archive__item-title" itemprop="headline">
+        {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
+            class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2> -->
+
+      <td
+        style="padding:0px;width:30%;vertical-align:middle;border:0px;border-spacing:0px;border-collapse:separate;margin:0px;">
+        {{post.img}}
+      </td>
+      <!-- <tr onmouseout="POEM_stop()" onmouseover="POEM_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='POEM_animation'>
+            <img src='/files/POEM/POEM_after.png' width="250">
+          </div>
+          <img src='/files/POEM/POEM_before.png' width="250">
+        </div>
+        <script type="text/javascript">
+          function POEM_start() {
+            document.getElementById('POEM_animation').style.opacity = "1";
+          }
+
+          function POEM_stop() {
+            document.getElementById('POEM_animation').style.opacity = "0";
+          }
+          POEM_stop()
+        </script>
+      </td> -->
+      <td
+        style="padding:0px 20px 0px 20px;width:70%;vertical-align:middle;border:0px;border-spacing:0px;border-collapse:separate;margin:0px;">
+        <h2 class="archive__item-title" itemprop="headline">
+          {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
+              class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+          {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+          {% endif %}
+        </h2>
+        <!-- <a href="#">
+          <papertitle>{{ post.title }}</papertitle>
+        </a> -->
+        {{ post.authors }}<br>
+        <br>
+        <strong><em>{{post.venue}}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</strong>
+        <br>
+        {% if post.links %}
+        {{ post.links }}<br>
+        {% endif %}
+        <!-- <p></p> -->
+        <p align="justify">
+          {{post.excerpt}}
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
