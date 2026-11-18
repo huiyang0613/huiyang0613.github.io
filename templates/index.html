@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="$description">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="$name — $chinese_name">
+  <meta property="og:description" content="$description">
+  <title>$name · $chinese_name</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  $icons
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-inner container" aria-label="Main navigation">
+      <a class="wordmark" href="#about">$name</a>
+      <ul class="nav-links">
+        <li><a href="#about" aria-current="location">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#misc">Misc.</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <section id="about" class="about-section" aria-labelledby="name-heading">
+      <div class="about-layout">
+        <div class="about-copy">
+          <h1 id="name-heading">$name <span lang="zh">$chinese_name</span></h1>
+          <p class="email-line"><strong>Email:</strong> $display_email</p>
+          <div class="biography">$biography</div>
+          <ul class="social-links" aria-label="Profiles and contact">$socials</ul>
+          <p class="contact-note">Feel free to get in touch.</p>
+        </div>
+        <figure class="portrait">
+          <img src="$portrait" alt="$name" width="2697" height="3607" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section id="publications" class="content-section publications-section" aria-labelledby="publications-heading">
+      <div class="section-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="publication-filters" role="group" aria-label="Filter publications">
+          <button type="button" data-filter="all" aria-pressed="false">Show all</button>
+          <button type="button" data-filter="selected" aria-pressed="true">Show selected</button>
+        </div>
+      </div>
+      $publication_note
+      <div class="publication-list">$publications</div>
+    </section>
+
+    <section id="experience" class="content-section" aria-labelledby="experience-heading">
+      <div class="section-heading"><h2 id="experience-heading">🪐 Experience</h2></div>
+      <div class="experience-list">$experience</div>
+    </section>
+
+    <section id="misc" class="content-section misc-section" aria-labelledby="misc-heading">
+      <div class="section-heading"><h2 id="misc-heading">🍫 Misc.</h2></div>
+      <div class="misc-grid">$misc</div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <span>© 2026 $name</span>
+    <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

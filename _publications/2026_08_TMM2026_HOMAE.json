@@ -1,0 +1,40 @@
+{
+  "title": "Occlusion-Aware 3D Hand-Object Pose Estimation with Masked AutoEncoders",
+  "venue": "IEEE Transactions on Multimedia (TMM), 2026",
+  "selected": true,
+  "authors": [
+    {
+      "name": "Hui Yang"
+    },
+    {
+      "name": "Wei Sun"
+    },
+    {
+      "name": "Jian Liu"
+    },
+    {
+      "name": "Jin Zheng"
+    },
+    {
+      "name": "Jian Xiao"
+    },
+    {
+      "name": "Ajmal Mian"
+    }
+  ],
+  "media": {
+    "type": "image",
+    "src": "files/HOMAE/teaser.png"
+  },
+  "links": [
+    {
+      "label": "Paper",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11664344"
+    },
+    {
+      "label": "arXiv",
+      "url": "https://arxiv.org/abs/2506.10816"
+    }
+  ],
+  "summary": "HOMAE is an occlusion-aware framework for monocular 3D hand-object pose estimation that combines target-focused masked autoencoding with implicit-explicit geometric representations for robust reasoning under severe occlusion."
+}

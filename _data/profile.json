@@ -1,0 +1,47 @@
+{
+  "name": "Hui Yang",
+  "chinese_name": "杨慧",
+  "role": "Ph.D. Candidate",
+  "institution": "Hunan University",
+  "location": "Singapore",
+  "email": "yanghui@u.nus.edu",
+  "display_email": "yanghui [at] u [dot] nus [dot] edu",
+  "description": "Hui Yang is a Ph.D. candidate at Hunan University and a visiting Ph.D. student at the National University of Singapore, working on robotics and 3D vision.",
+  "biography": [
+    "I’m a Ph.D. candidate at <a href=\"https://www.hnu.edu.cn/\">Hunan University</a>, advised by Prof. Wei Sun. I’m also a visiting Ph.D. student at the <a href=\"https://nus.edu.sg/\">National University of Singapore</a>, advised by Prof. <a href=\"https://www.comp.nus.edu.sg/~leegh/\">Gim Hee Lee</a>.",
+    "My research interests include <strong>robotics</strong>, with a focus on manipulation, robot perception, and embodied AI, as well as <strong>3D vision</strong>, including physical scene understanding and 3D reconstruction."
+  ],
+  "socials": [
+    {
+      "label": "Google Scholar",
+      "icon": "scholar",
+      "url": "https://scholar.google.com/citations?hl=zh-CN&user=rhQSwuoAAAAJ"
+    },
+    {
+      "label": "Email",
+      "icon": "email",
+      "url": "mailto:yanghui@u.nus.edu"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/huiyang0613"
+    }
+  ],
+  "experience": [
+    {
+      "institution": "National University of Singapore",
+      "url": "https://nus.edu.sg/",
+      "role": "Visiting Ph.D. Student",
+      "dates": "Mar 2026 – Present",
+      "location": "Singapore",
+      "detail": "Computer Vision and Robotic Perception (CVRP) Lab",
+      "advisors": "Gim Hee Lee",
+      "logo": "files/Logos/NUS_logo.png"
+    }
+  ],
+  "service": "Reviewer for AAAI 2027.",
+  "interests": "",
+  "other": "",
+  "portrait": "assets/images/profile.jpg"
+}

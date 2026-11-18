@@ -1,9 +1,3 @@
-#project
-_site
-external
-tmp
-
-# general
 .DS_Store
-
-.vscode
+__pycache__/
+*.py[cod]

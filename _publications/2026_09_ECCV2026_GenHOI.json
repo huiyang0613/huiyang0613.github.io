@@ -1,0 +1,58 @@
+{
+  "title": "GenHOI: Generalized Hand-Object Pose Estimation with Occlusion Awareness",
+  "venue": "European Conference on Computer Vision (ECCV), 2026",
+  "selected": true,
+  "authors": [
+    {
+      "name": "Hui Yang"
+    },
+    {
+      "name": "Wei Sun"
+    },
+    {
+      "name": "Jian Liu"
+    },
+    {
+      "name": "Jian Xiao"
+    },
+    {
+      "name": "Tao Xie"
+    },
+    {
+      "name": "Hossein Rahmani"
+    },
+    {
+      "name": "Ajmal Saeed Mian"
+    },
+    {
+      "name": "Nicu Sebe"
+    },
+    {
+      "name": "Gim Hee Lee",
+      "url": "https://www.comp.nus.edu.sg/~leegh/"
+    }
+  ],
+  "media": {
+    "type": "image",
+    "src": "files/GenHOI/teaser.png"
+  },
+  "links": [
+    {
+      "label": "Project Page",
+      "url": "https://huiyang0613.github.io/GenHOI_page/"
+    },
+    {
+      "label": "Paper",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-37324-3_37"
+    },
+    {
+      "label": "arXiv",
+      "url": "https://arxiv.org/abs/2603.19013"
+    },
+    {
+      "label": "Code",
+      "url": "https://github.com/huiyang0613/GenHOI"
+    }
+  ],
+  "summary": "GenHOI is an occlusion-aware framework for generalized 3D hand-object pose estimation that integrates hierarchical semantic knowledge with hand priors to generalize to unseen objects and novel interactions."
+}
